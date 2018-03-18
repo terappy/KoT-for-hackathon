@@ -1,6 +1,8 @@
 KoT for One
 
-#Description
+----
+
+# Description
 
 This is IoT-toy, "For One" for pets which waiting for Return of their owner.
 You can watch your pets and the pets play with this toy on remote environment.
@@ -10,11 +12,11 @@ we use MQTT for controlling "For One" bellow.
 
 - milkcocoa
 
-#Requirement
+# Requirement
 
 - Android Studio 3.0
 - Android SDK version 21
 
-#Demo
+# Demo
 
 [demo movie](https://youtu.be/DvYjjollwzQ)
