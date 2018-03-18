@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.camera.kot_for_one.AudioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selectVoice"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/selectvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/yobikake"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/yobikake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/yobikake"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/kakegoe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kakegoe"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/homeru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homeru"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/sayonara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sayonara"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/recordvoice"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:text="@string/record" />
+
+            <Button
+                android:id="@+id/stoprecord"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/stoprecord" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/playsound"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_bright"
+                android:text="@string/playsound" />
+
+            <Button
+                android:id="@+id/stopsound"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/stopsound" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/hogehoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/accent_material_light"
+            android:text="Send"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/audioback"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/audioback" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
